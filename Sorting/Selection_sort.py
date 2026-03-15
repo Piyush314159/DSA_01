@@ -13,3 +13,4 @@ class Solution:
     
 a = Solution()
 print(a.selectionSort([4, 3, 7, 9, 1]))  # [1, 3, 4, 7, 9]
+print(a.selectionSort([10, 5, 2, 8, 1])) # [1, 2, 5, 8, 10]
