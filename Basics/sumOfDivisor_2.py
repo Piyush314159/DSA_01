@@ -13,3 +13,10 @@ class Solution:
     #i=2,result=4+(2*2)=8
     #i=3,result=8+(3*1)=11
     #i=4,result=11+(4*1)=15
+    #
+a = Solution()
+print(a.sumOfDivisors(4)) # 15
+print(a.sumOfDivisors(5)) # 21
+print(a.sumOfDivisors(6)) # 28
+print(a.sumOfDivisors(10)) # 87     
+
