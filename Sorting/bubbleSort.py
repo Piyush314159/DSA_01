@@ -10,7 +10,7 @@ class Solution:
             if not swapped:
                 break
         return arr
-    
+    #
 a = Solution()
 print(a.bubbleSort([5, 3, 8, 1, 2]))
 
