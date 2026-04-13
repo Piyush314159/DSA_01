@@ -1,13 +1,14 @@
 class Solution:
-    def frequencyCount(self, arr):
-        n=len(arr)
-        result=[0]*n
-        for i in range(1,n+1):
-            for num in arr:
-                if i==num:
-                    result[i-1]+=1
-                    
-        return result
-    
-a=Solution()
-print(a.frequencyCount([2, 3, 2, 3, 5]))
+    def frequencyOfOccurance(self,arr):
+        occ = {}
+        for el in arr:
+            occ[el] = occ.get(el, 0) + 1 #finds the element's occurance in the dictionary(occ) if not able find then returns 0(default), get(element,default)
+
+        output = []
+        for i in range(1,len(arr)+1):
+            output.append(occ.get(i,0))
+
+        return output
+     
+a = Solution()
+print(a.frequncyOfOccurance([2, 3, 2, 3, 5]))
