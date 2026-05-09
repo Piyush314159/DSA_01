@@ -14,3 +14,5 @@ class Solution:
 a = Solution()
 print(a.selectionSort([4, 3, 7, 9, 1]))  # [1, 3, 4, 7, 9]
 print(a.selectionSort([10, 5, 2, 8, 1])) # [1, 2, 5, 8, 10]
+
+# store the index of the minimum element of the unsorted array then swap it with the first element of the unsorted array and repeat the process until the whole array is sorted.
