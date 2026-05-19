@@ -7,7 +7,7 @@ class Solution:
         leader.append(arr[-1])              #add the rightmost element to the list of leaders
 
         for i in range(n-2, -1, -1):
-            if arr[i]> max_right:           #if the current element is greater than the max_right, it is a leader, so we add it to the list and update max_right
+            if arr[i]>= max_right:           #if the current element is greater than the max_right, it is a leader, so we add it to the list and update max_right
                 leader.append(arr[i])
                 max_right = arr[i]
         return leader[::-1]                 #reverse the list of leaders to maintain the original order of leaders in the input array
