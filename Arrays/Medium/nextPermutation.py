@@ -3,7 +3,7 @@
 * Finding swap element → O(n)
 * Reversing suffix → O(n)
 '''
-class Solution:  #arr[] = [2, 4, 1, 7, 5, 0]
+class Solution:  
     def nextPermutation(self, arr):
         n = len(arr)
         i=n-2
@@ -46,4 +46,4 @@ class Solution:  #arr[] = [2, 4, 1, 7, 5, 0]
         return arr
     
 a = Solution()
-print(a.nextPermutation([3, 2, 1]))
+print(a.nextPermutation([2, 4, 1, 7, 8, 6, 3])) 
