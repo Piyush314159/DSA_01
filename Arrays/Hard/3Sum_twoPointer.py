@@ -1,3 +1,11 @@
+"""
+* Sorting the array      → O(n log n)
+* Fixing first element   → O(n)
+* Two pointer search     → O(n)
+* Overall                → O(n²)
+* Space                  → O(1)
+"""
+
 class Solution:
     def threeSum(self, nums):
         nums.sort()                             # Sort the input array to facilitate the two-pointer technique and to easily skip duplicates
