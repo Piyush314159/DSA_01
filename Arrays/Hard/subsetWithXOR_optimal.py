@@ -9,7 +9,6 @@ class Solution:
                 # include a
                 new_dp[x ^ a] = new_dp.get(x ^ a, 0) + dp[x]# if we include a, the new xor value becomes x ^ a, and the count of subsets with this new xor value increases by dp[x] (the count of subsets that had xor value x before including a).
             dp = new_dp
-            print(dp)
         return dp.get(K, 0)
 
 a = Solution()
