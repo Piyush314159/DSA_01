@@ -1,3 +1,15 @@
+"""
+Sort the array first so overlapping intervals are always adjacent.
+        
+Iterate through each interval:
+    - If merged is empty OR no overlap → just append.
+    - If overlap (start <= previous end) → extend the previous end
+      using max to handle cases where current interval is fully contained.
+        
+Return the merged list.
+        
+Time: O(n log n) | Space: O(n)
+ """
 class Solution:
 	def mergeOverlap(self,arr):
 		arr.sort()
