@@ -1,5 +1,5 @@
 class Solution:
-    def findPeakGrid(self, mat: List[List[int]]) -> List[int]:
+    def findPeakGrid(self, mat):
         lo, hi = 0, len(mat[0])-1
 
         while lo <= hi:
