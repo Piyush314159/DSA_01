@@ -1,2 +1,0 @@
-strs = ["flower","flow","flight"]
-
