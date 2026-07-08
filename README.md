@@ -541,7 +541,7 @@ python3 Arrays/Medium/kedanesAlgorithem.py
 ```
    ╔════════════════════════════════════════════════╗
    ║                                                ║
-   ║        Made with ❤️ and ☕ by Piyush Maji       ║
+   ║        Made with ☕ by Piyush Maji       ║
    ║          One problem at a time.                 ║
    ║                                                ║
    ╚════════════════════════════════════════════════╝
