@@ -37,3 +37,14 @@ head.next = Node(2)
 head.next.next = Node(3)
 head.next.next.next = Node(4)
 head.next.next.next.next = Node(5)
+
+a = Solution()
+head = a.deleteNode(head, 3)
+
+curr = head
+while curr:
+    if curr.next:
+        print(curr.val, end=" -> ")
+    else:
+        print(curr.val, end=" -> None")
+    curr = curr.next
