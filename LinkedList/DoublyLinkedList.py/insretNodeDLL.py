@@ -1,3 +1,6 @@
+from requests import head
+
+
 class Node:
     def __init__(self, data):
         self.data = data
@@ -19,13 +22,17 @@ class Solution:
         while curr is not None and count < p - 1:
             curr = curr.next
             count += 1
-            if count == p-1:
-                new_node.next = curr.next
-                new_node.prev = curr
-                if curr.next:
-                    curr.next.prev = new_node
-                curr.next = new_node
-                return head
+
+        if curr is None:            # p was out of bounds
+            print("Position out of bounds")
+            return head
+        
+        new_node.next = curr.next
+        new_node.prev = curr
+        if curr.next:
+            curr.next.prev = new_node
+        curr.next = new_node
+        return head
             
 head = Node(1)
 head.next = Node(2)
@@ -36,7 +43,7 @@ head.next.next.next = Node(4)
 head.next.next.next.prev = head.next.next
 
 a = Solution()
-head = a.insertNodeDLL(head, 2, 5)
+head = a.insertNodeDLL(head, 5, 5)
 
 print("Doubly Linked List after insertion:")
 curr = head
@@ -46,4 +53,4 @@ while curr:
     else:
         print(curr.data, end=" <-> None")
     curr = curr.next
-    
+
