@@ -18,9 +18,7 @@ class Solution:
         curr = head
         while curr:
             if i - j  == n:
-                nxt = curr.next.next
-                curr.next = None
-                curr.next = nxt
+                curr.next = curr.next.next
             curr = curr.next
             j += 1
 
@@ -38,12 +36,12 @@ def print_linked_list(head):
 # creating a linked list for testing
 # ===================================
 head = Node(1)
-head.next = Node(4)
-head.next.next = Node(2)
-head.next.next.next = Node(3)
+head.next = Node(2)
+head.next.next = Node(3)
+head.next.next.next = Node(4)
 head.next.next.next.next = Node(5)
-head.next.next.next.next.next = Node(7)
-head.next.next.next.next.next.next = Node(8)
+head.next.next.next.next.next = Node(6)
+head.next.next.next.next.next.next = Node(7)
 
 sol = Solution()
 print_linked_list(head)
@@ -51,3 +49,26 @@ print_linked_list(head)
 head1 = sol.removeNthFromEnd(head, 3)
 print('\n')
 print_linked_list(head1)
+
+class Solution1:
+    def removeNthFromEnd(self, head, n):
+        dummy = Node(0)
+        dummy.next = head
+        fast = slow = dummy
+
+        # Advance fast by n+1 steps
+        for _ in range(n + 1):
+            fast = fast.next
+
+        # Move both until fast hits None
+        while fast:
+            fast = fast.next
+            slow = slow.next    #slow stops n+1 steps behind fast
+
+        slow.next = slow.next.next
+        return dummy.next
+
+sol1 = Solution1()
+head2 = sol1.removeNthFromEnd(head, 3)
+print('\n')
+print_linked_list(head2)
