@@ -10,10 +10,10 @@ class Solution:
         curr = head
         while curr:
             if curr.data in seen:
-                if curr.prev:
-                    curr.prev.next = curr.next
                 if curr.next:
                     curr.next.prev = curr.prev
+                curr.prev.next = curr.next
+                    
             else:
                 seen.add(curr.data)
             curr = curr.next
@@ -31,12 +31,12 @@ def printList(head):
 
 #create a doubly linked list for testing
 head = Node(1)
-node2 = Node(2)
+node2 = Node(1)
 node3 = Node(2)
 node4 = Node(3)
 node5 = Node(4)
 node6 = Node(4)
-node7 = Node(5)
+node7 = Node(4)
 head.next = node2
 node2.prev = head
 node2.next = node3
