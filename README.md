@@ -68,7 +68,7 @@ This repository is my personal DSA practice ground, structured around the **[Str
 | 03 | [**Arrays**](#-arrays) | 48 | 🟢 |
 | 04 | [**Binary Search**](#-binary-search) | 25 | 🟢 |
 | 05 | [**Strings**](#-strings) | 13 | 🟢 |
-| 06 | [**Linked List**](#-linked-list) | 29 | 🟡 |
+| 06 | [**Linked List**](#-linked-list) | 29 | 🟢 |
 | 07 | [**Recursion & Backtracking**](#-recursion) | 1 | 🟡 |
 | 08 | [**Codeforces**](#-codeforces) | 6 | 🟡 |
 | 09 | [**Contest**](#-contest) | 2 | 🟡 |
