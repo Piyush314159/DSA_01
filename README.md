@@ -24,7 +24,7 @@
 
 <br>
 
-<img src="https://img.shields.io/badge/Total_Problems-123-blueviolet?style=flat-square&labelColor=1a1b27&color=7aa2f7" height="28">
+<img src="https://img.shields.io/badge/Total_Problems-153-blueviolet?style=flat-square&labelColor=1a1b27&color=7aa2f7" height="28">
 &nbsp;&nbsp;
 <img src="https://img.shields.io/badge/Language-Python_🐍-blue?style=flat-square&labelColor=1a1b27&color=3b82f6" height="28">
 &nbsp;&nbsp;
@@ -49,8 +49,8 @@ This repository is my personal DSA practice ground, structured around the **[Str
 <div align="center">
 
 ```
-  Topics Covered         ████████████████████░░░░░░░░░░░░░░░░░░░░  6 / 17
-  Total Solutions        ██████████████████████████████░░░░░░░░░░  123 problems
+  Topics Covered         ████████████████████░░░░░░░░░░░░░░░░░░░░  8 / 19
+  Total Solutions        ██████████████████████████████████░░░░░  153 problems
 ```
 
 </div>
@@ -68,10 +68,10 @@ This repository is my personal DSA practice ground, structured around the **[Str
 | 03 | [**Arrays**](#-arrays) | 48 | 🟢 |
 | 04 | [**Binary Search**](#-binary-search) | 25 | 🟢 |
 | 05 | [**Strings**](#-strings) | 13 | 🟢 |
-| 06 | [**Codeforces**](#-codeforces) | 6 | 🟡 |
-| 07 | [**Contest**](#-contest) | 2 | 🟡 |
-| 08 | Linked List | — | ⚫ |
-| 09 | Recursion & Backtracking | — | ⚫ |
+| 06 | [**Linked List**](#-linked-list) | 29 | 🟡 |
+| 07 | [**Recursion & Backtracking**](#-recursion) | 1 | 🟡 |
+| 08 | [**Codeforces**](#-codeforces) | 6 | 🟡 |
+| 09 | [**Contest**](#-contest) | 2 | 🟡 |
 | 10 | Bit Manipulation | — | ⚫ |
 | 11 | Stack & Queue | — | ⚫ |
 | 12 | Two Pointers & Sliding Window | — | ⚫ |
@@ -215,6 +215,18 @@ DSA_01/
 │       ├── kDistinctSubstring.py
 │       ├── longestPalindromicSubstring.py
 │       └── substringBeautySum.py
+│
+├── 📒 LinkedList/                       ── 29 problems
+│   ├── 1D_LinkedList/                   (22 problems)
+│   │   ├── Easy/                        (5 problems)
+│   │   ├── Medium/                      (16 problems)
+│   │   └── hard/                        (1 problem)
+│   └── DoublyLinkedList.py/             (7 problems)
+│       ├── Easy/                        (4 problems)
+│       └── medium/                      (3 problems)
+│
+├── 📗 Recursion/                        ── 1 problem
+│   └── Medium/                          (1 problem)
 │
 ├── 🏆 Codeforces/                      ── 6 problems
 │   ├── A_Watermelon.py
@@ -439,6 +451,92 @@ DSA_01/
 
 </details>
 
+### 📒 Linked List
+
+> *Pointer-based list manipulation, cycle detection, reversal, and node rearrangement across singly and doubly linked lists*
+
+<details>
+<summary><b>🟢 1D Linked List — Easy — 5 problems</b></summary>
+
+| # | Problem | Key Technique |
+|:-:|---------|---------------|
+| 1 | Basic Structure | Node creation |
+| 2 | Insert at End | Pointer traversal |
+| 3 | Length of Linked List | Counting |
+| 4 | Delete Node with Head Reference | Copy-next trick |
+| 5 | Search Element in LL | Linear scan |
+
+</details>
+
+<details>
+<summary><b>🟡 1D Linked List — Medium — 16 problems</b></summary>
+
+| # | Problem | Key Technique |
+|:-:|---------|---------------|
+| 1 | Add One to the End | Carry handling |
+| 2 | Delete Middle Node | Fast/slow pointers |
+| 3 | Detect Cycle Index | Floyd's algorithm |
+| 4 | Detect Loop in LL | Floyd's algorithm |
+| 5 | Intersection Point in LL | Length difference |
+| 6 | Iterative Reverse LL | Pointer reversal |
+| 7 | Length of Loop in LL | Cycle length counting |
+| 8 | Middle of LL | Fast/slow pointers |
+| 9 | Odd-Even Indices Rearrange | Pointer re-linking |
+| 10 | Odd-Even LL | Pointer re-linking |
+| 11 | Palindrome LL | Reverse second half |
+| 12 | Reverse LL Using Recursion | Recursion |
+| 13 | Remove Nth Node From End | Two pointers |
+| 14 | Sort LL | Merge sort |
+| 15 | Sort LL with 0/1/2 | Counting / relinking |
+| 16 | Sum Two LL From Start | Digit carry |
+
+</details>
+
+<details>
+<summary><b>🔴 1D Linked List — Hard — 1 problem</b></summary>
+
+| # | Problem | Key Technique |
+|:-:|---------|---------------|
+| 1 | Rotate List K Times | Circular linking |
+
+</details>
+
+<details>
+<summary><b>🟢 Doubly Linked List — Easy — 4 problems</b></summary>
+
+| # | Problem | Key Technique |
+|:-:|---------|---------------|
+| 1 | Basic Structure | Node creation |
+| 2 | Insert Node in DLL | Pointer updates |
+| 3 | Delete Node in DLL | Pointer updates |
+| 4 | Reverse DLL | Pointer reversal |
+
+</details>
+
+<details>
+<summary><b>🟡 Doubly Linked List — Medium — 3 problems</b></summary>
+
+| # | Problem | Key Technique |
+|:-:|---------|---------------|
+| 1 | Delete Node in DLL | Pointer updates |
+| 2 | Remove Duplicates in DLL | Two pointers |
+| 3 | Pair Sum in DLL | Two pointers |
+
+</details>
+
+### 🌀 Recursion
+
+> *Recursion practice — base cases, decomposition, and call-stack thinking*
+
+<details>
+<summary><b>🟡 Medium — 1 problem</b></summary>
+
+| # | Problem | Key Technique |
+|:-:|---------|---------------|
+| 1 | String to Integer | Recursive parsing |
+
+</details>
+
 ---
 
 ### 🏆 Codeforces
@@ -488,9 +586,9 @@ python3 Arrays/Medium/kedanesAlgorithem.py
 
 ```
                     ┌─────────────────────────────────────────────────┐
-  🟢  Easy          │██████████████████████████████████████████│  62   │
-  🟡  Medium        │████████████████████████████████████      │  45   │
-  🔴  Hard          │█████████████████                         │  16   │
+  🟢  Easy          │████████████████████████░░░░░░░░░░░░░░░░░░  │  71   │
+  🟡  Medium        │██████████████████████░░░░░░░░░░░░░░░░░░░   │  65   │
+  🔴  Hard          │█████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░   │  17   │
                     └─────────────────────────────────────────────────┘
 ```
 
@@ -505,9 +603,9 @@ python3 Arrays/Medium/kedanesAlgorithem.py
 - [x] ~~Arrays (Easy → Hard)~~
 - [x] ~~Binary Search (1D, 2D, Search Space)~~
 - [x] ~~Strings (Easy & Medium)~~
-- [ ] Linked Lists
+- [x] ~~Linked Lists~~
 - [ ] Stacks & Queues
-- [ ] Recursion & Backtracking
+- [x] ~~Recursion & Backtracking~~
 - [ ] Greedy Algorithms
 - [ ] Binary Trees & BSTs
 - [ ] Graphs (BFS, DFS, Dijkstra)
