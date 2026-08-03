@@ -3,22 +3,16 @@ string="abcabcddd"
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         
-        substring=set()
-        str_dict={}
-        for i in range(0,len(s)):
-            substring={s[i]}
-            for j in range(i+1,len(s)):
-                if s[j] not in substring:
-                    substring.add(s[j])
-                else:
-                    break
-                    
-            str_dict[tuple(substring)]=i
-        
-        if len(str_dict)==0:
-            return 0
-            
-        return max(len(key) for key in str_dict.keys())
+        seen = {}                           #for storing where we seen the characters
+        left = 0                            #for applying sliding window
+        max_len = 0                         #for storing
+        for right in range(len(s)):
+            if s[right] in seen and seen[s[right]] >= left:
+                left = seen[s[right]] + 1
+            seen[s[right]] = right          #for storing the char postions
+            max_len = max(max_len, right - left + 1)
+            print(seen,left,max_len)
+        return max_len
                     
         
 
