@@ -15,3 +15,20 @@ class Solution:
 
 sol = Solution()
 print(sol.subsets([1,2,3]))
+
+'''
+pick - don't pick logic
+'''
+lst = []
+def sequences(i, c, arr):
+    if i >= len(arr):
+        lst.append(c[:])
+        return 
+
+    c.append(arr[i])
+    sequences(i+1, c, arr)  #pick
+    c.pop()
+    sequences(i+1, c, arr)  #don't pick
+    return lst
+
+print(sequences(0, [], [3, 1, 2]))
