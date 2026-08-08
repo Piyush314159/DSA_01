@@ -1,3 +1,7 @@
+
+'''
+1. backtracking solution
+'''
 class Solution:
     def subsets(self, nums):
         res = []
@@ -17,7 +21,7 @@ sol = Solution()
 print(sol.subsets([1,2,3]))
 
 '''
-pick - don't pick logic
+2.pick - don't pick logic
 '''
 lst = []
 def sequences(i, c, arr):
