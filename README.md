@@ -24,7 +24,7 @@
 
 <br>
 
-<img src="https://img.shields.io/badge/Total_Problems-153-blueviolet?style=flat-square&labelColor=1a1b27&color=7aa2f7" height="28">
+<img src="https://img.shields.io/badge/Total_Problems-161-blueviolet?style=flat-square&labelColor=1a1b27&color=7aa2f7" height="28">
 &nbsp;&nbsp;
 <img src="https://img.shields.io/badge/Language-Python_🐍-blue?style=flat-square&labelColor=1a1b27&color=3b82f6" height="28">
 &nbsp;&nbsp;
@@ -50,7 +50,7 @@ This repository is my personal DSA practice ground, structured around the **[Str
 
 ```
   Topics Covered         ████████████████████░░░░░░░░░░░░░░░░░░░░  8 / 19
-  Total Solutions        ██████████████████████████████████░░░░░  153 problems
+  Total Solutions        ███████████████████████████████████░░░░  161 problems
 ```
 
 </div>
@@ -69,7 +69,7 @@ This repository is my personal DSA practice ground, structured around the **[Str
 | 04 | [**Binary Search**](#-binary-search) | 25 | 🟢 |
 | 05 | [**Strings**](#-strings) | 13 | 🟢 |
 | 06 | [**Linked List**](#-linked-list) | 29 | 🟢 |
-| 07 | [**Recursion & Backtracking**](#-recursion) | 1 | 🟡 |
+| 07 | [**Recursion & Backtracking**](#-recursion) | 9 | 🟡 |
 | 08 | [**Codeforces**](#-codeforces) | 6 | 🟡 |
 | 09 | [**Contest**](#-contest) | 2 | 🟡 |
 | 10 | Bit Manipulation | — | ⚫ |
@@ -225,8 +225,17 @@ DSA_01/
 │       ├── Easy/                        (4 problems)
 │       └── medium/                      (3 problems)
 │
-├── 📗 Recursion/                        ── 1 problem
-│   └── Medium/                          (1 problem)
+├── 📗 Recursion/                        ── 9 problems
+│   └── Medium/                          (9 problems)
+│       ├── countGoodNumbers.py
+│       ├── genarateAllBinaryStrings.py
+│       ├── genarateParenthesis.py
+│       ├── power.py
+│       ├── reverseStack.py
+│       ├── sortStack.py
+│       ├── stringToInteger.py
+│       ├── subsequencesWithSumK.py
+│       └── subsets.py
 │
 ├── 🏆 Codeforces/                      ── 6 problems
 │   ├── A_Watermelon.py
@@ -529,11 +538,19 @@ DSA_01/
 > *Recursion practice — base cases, decomposition, and call-stack thinking*
 
 <details>
-<summary><b>🟡 Medium — 1 problem</b></summary>
+<summary><b>🟡 Medium — 9 problems</b></summary>
 
 | # | Problem | Key Technique |
 |:-:|---------|---------------|
-| 1 | String to Integer | Recursive parsing |
+| 1 | Count Good Numbers | Modular exponentiation |
+| 2 | Generate All Binary Strings | Recursion / backtracking |
+| 3 | Generate Parenthesis | Recursion / backtracking |
+| 4 | Power (x^n) | Recursive exponentiation |
+| 5 | Reverse Stack | Recursion |
+| 6 | Sort Stack | Recursion |
+| 7 | String to Integer | Recursive parsing |
+| 8 | Subsequences with Sum K | Recursion / backtracking |
+| 9 | Subsets | Recursion / bit manipulation |
 
 </details>
 
@@ -587,7 +604,7 @@ python3 Arrays/Medium/kedanesAlgorithem.py
 ```
                     ┌─────────────────────────────────────────────────┐
   🟢  Easy          │████████████████████████░░░░░░░░░░░░░░░░░░  │  71   │
-  🟡  Medium        │██████████████████████░░░░░░░░░░░░░░░░░░░   │  65   │
+  🟡  Medium        │██████████████████████████░░░░░░░░░░░░░░░   │  73   │
   🔴  Hard          │█████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░   │  17   │
                     └─────────────────────────────────────────────────┘
 ```
@@ -605,7 +622,7 @@ python3 Arrays/Medium/kedanesAlgorithem.py
 - [x] ~~Strings (Easy & Medium)~~
 - [x] ~~Linked Lists~~
 - [ ] Stacks & Queues
-- [x] ~~Recursion & Backtracking~~
+- [ ] Recursion & Backtracking *(in progress — 9 problems)*
 - [ ] Greedy Algorithms
 - [ ] Binary Trees & BSTs
 - [ ] Graphs (BFS, DFS, Dijkstra)
