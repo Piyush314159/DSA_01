@@ -1,7 +1,6 @@
-import time
 from collections import defaultdict
 
-string="abcabcddd"
+string="abcabbcddd"
 
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
@@ -20,10 +19,7 @@ class Solution:
         
         return max_length
     
-start_time = time.time()
 a = Solution()
-result = a.lengthOfLongestSubstring("abcabcbb")
-end_time = time.time()
+result = a.lengthOfLongestSubstring("abcabbcddd")
 
 print(f"Result: {result}")
-print(f"Runtime: {end_time - start_time:.6f} seconds")
