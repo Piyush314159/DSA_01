@@ -20,6 +20,10 @@ class Solution:
                 ans += 1
         return ans
 
+a = Solution()
+print('For script 1')
+print(a.countRotations("aab", 1))  # Output: 2
+
 
 class Solution:
     def countRotations(self, s: str, k: int) -> int:
@@ -45,4 +49,8 @@ class Solution:
                 ans += 1
         
         return ans
+
+b = Solution()
+print('For script 2')
+print(b.countRotations("aab", 1))  # Output: 2
     
