@@ -1,10 +1,10 @@
 class Solution:
-    def recursiveBubbleSort(self, arr, i, n):
+    def recursiveBubbleSort(self, arr, i, n):   # n is the length of the array, i is the current index being compared
 
-        if n==1:
+        if n==1:    # Base case: if the array has only one element, it's already sorted
             return
         
-        if i==n-1:
+        if i==n-1:  # when hitting the end of the array we are floating the largest element to the end of the array, we need to start from the beginning again
             self.recursiveBubbleSort(arr,0,n-1)
             return
 
