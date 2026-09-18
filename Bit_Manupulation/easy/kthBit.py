@@ -10,3 +10,7 @@ class Solution:
 
 s = Solution()
 print(s.checkKthBit(4,0))
+
+def checkbit2(n,k):
+    return (n and (1<<k)) != 0
+print(checkbit2(4,0))
