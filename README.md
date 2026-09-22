@@ -24,7 +24,7 @@
 
 <br>
 
-<img src="https://img.shields.io/badge/Total_Problems-161-blueviolet?style=flat-square&labelColor=1a1b27&color=7aa2f7" height="28">
+<img src="https://img.shields.io/badge/Total_Problems-181-blueviolet?style=flat-square&labelColor=1a1b27&color=7aa2f7" height="28">
 &nbsp;&nbsp;
 <img src="https://img.shields.io/badge/Language-Python_🐍-blue?style=flat-square&labelColor=1a1b27&color=3b82f6" height="28">
 &nbsp;&nbsp;
@@ -49,8 +49,8 @@ This repository is my personal DSA practice ground, structured around the **[Str
 <div align="center">
 
 ```
-  Topics Covered         ████████████████████░░░░░░░░░░░░░░░░░░░░  8 / 19
-  Total Solutions        ███████████████████████████████████░░░░  161 problems
+  Topics Covered         ██████████████████████░░░░░░░░░░░░░░░░░░  9 / 19
+  Total Solutions        █████████████████████████████████████░░  181 problems
 ```
 
 </div>
@@ -69,10 +69,10 @@ This repository is my personal DSA practice ground, structured around the **[Str
 | 04 | [**Binary Search**](#-binary-search) | 25 | 🟢 |
 | 05 | [**Strings**](#-strings) | 13 | 🟢 |
 | 06 | [**Linked List**](#-linked-list) | 29 | 🟢 |
-| 07 | [**Recursion & Backtracking**](#-recursion) | 9 | 🟡 |
-| 08 | [**Codeforces**](#-codeforces) | 6 | 🟡 |
-| 09 | [**Contest**](#-contest) | 2 | 🟡 |
-| 10 | Bit Manipulation | — | ⚫ |
+| 07 | [**Recursion & Backtracking**](#-recursion) | 18 | 🟡 |
+| 08 | [**Bit Manipulation**](#-bit-manipulation) | 8 | 🟡 |
+| 09 | [**Codeforces**](#-codeforces) | 6 | 🟡 |
+| 10 | [**Contest**](#-contest) | 5 | 🟡 |
 | 11 | Stack & Queue | — | ⚫ |
 | 12 | Two Pointers & Sliding Window | — | ⚫ |
 | 13 | Heaps / Priority Queue | — | ⚫ |
@@ -225,17 +225,38 @@ DSA_01/
 │       ├── Easy/                        (4 problems)
 │       └── medium/                      (3 problems)
 │
-├── 📗 Recursion/                        ── 9 problems
-│   └── Medium/                          (9 problems)
+├── 📗 Recursion/                        ── 18 problems
+│   └── Medium/                          (18 problems)
+│       ├── combinationSum.py
+│       ├── combinationSumII.py
+│       ├── combinationSumIII.py
 │       ├── countGoodNumbers.py
 │       ├── genarateAllBinaryStrings.py
 │       ├── genarateParenthesis.py
+│       ├── letterCombinationOfPhoneNumber.py
+│       ├── palindromePartitioning.py
 │       ├── power.py
+│       ├── ratInMaze.py
 │       ├── reverseStack.py
 │       ├── sortStack.py
 │       ├── stringToInteger.py
 │       ├── subsequencesWithSumK.py
-│       └── subsets.py
+│       ├── subsetII.py
+│       ├── subsetSumI.py
+│       ├── subsets.py
+│       └── wordSearch.py
+│
+├── 🔧 Bit_Manupulation/                ── 8 problems
+│   ├── easy/                            (6 problems)
+│   │   ├── kthBit.py
+│   │   ├── minBitFlips.py
+│   │   ├── oddOccurance.py
+│   │   ├── powerOf2.py
+│   │   ├── twoOddOccuring.py
+│   │   └── xor_LtoR.py
+│   └── medium/                          (2 problems)
+│       ├── Subsets.py
+│       └── divisionUsingBit.py
 │
 ├── 🏆 Codeforces/                      ── 6 problems
 │   ├── A_Watermelon.py
@@ -245,8 +266,12 @@ DSA_01/
 │   ├── Team.py
 │   └── wayTooLongString.py
 │
-└── 🎯 Contest/                         ── 2 problems
-    ├── Medium/
+└── 🎯 Contest/                         ── 5 problems
+    ├── Easy/                            (2 problems)
+    │   ├── biweekly_191.py
+    │   └── leetcode_518_weekly.py
+    ├── Medium/                          (2 problems)
+    │   ├── biweekly_191.py
     │   └── validString.py
     └── Hard/
         └── maxSumOf_mOverlapingSubarrays.py
@@ -535,22 +560,61 @@ DSA_01/
 
 ### 🌀 Recursion
 
-> *Recursion practice — base cases, decomposition, and call-stack thinking*
+> *Recursion & backtracking — base cases, decomposition, call-stack thinking, and exhaustive search*
 
 <details>
-<summary><b>🟡 Medium — 9 problems</b></summary>
+<summary><b>🟡 Medium — 18 problems</b></summary>
 
 | # | Problem | Key Technique |
 |:-:|---------|---------------|
-| 1 | Count Good Numbers | Modular exponentiation |
-| 2 | Generate All Binary Strings | Recursion / backtracking |
-| 3 | Generate Parenthesis | Recursion / backtracking |
-| 4 | Power (x^n) | Recursive exponentiation |
-| 5 | Reverse Stack | Recursion |
-| 6 | Sort Stack | Recursion |
-| 7 | String to Integer | Recursive parsing |
-| 8 | Subsequences with Sum K | Recursion / backtracking |
-| 9 | Subsets | Recursion / bit manipulation |
+| 1 | Combination Sum | Recursion / backtracking |
+| 2 | Combination Sum II | Recursion / duplicate skipping |
+| 3 | Combination Sum III | Recursion / backtracking |
+| 4 | Count Good Numbers | Modular exponentiation |
+| 5 | Generate All Binary Strings | Recursion / backtracking |
+| 6 | Generate Parenthesis | Recursion / backtracking |
+| 7 | Letter Combinations of Phone Number | Recursion / mapping |
+| 8 | Palindrome Partitioning | Recursion / backtracking |
+| 9 | Power (x^n) | Recursive exponentiation |
+| 10 | Rat in a Maze | Backtracking / DFS |
+| 11 | Reverse Stack | Recursion |
+| 12 | Sort Stack | Recursion |
+| 13 | String to Integer | Recursive parsing |
+| 14 | Subsequences with Sum K | Recursion / backtracking |
+| 15 | Subset II (with duplicates) | Sorting + backtracking |
+| 16 | Subset Sum I | Recursion |
+| 17 | Subsets | Recursion / bit manipulation |
+| 18 | Word Search | Backtracking / DFS |
+
+</details>
+
+---
+
+### 🔧 Bit Manipulation
+
+> *Bitwise operations — XOR tricks, masking, shifting, and bit-level problem solving*
+
+<details>
+<summary><b>🟢 Easy — 6 problems</b></summary>
+
+| # | Problem | Key Technique |
+|:-:|---------|---------------|
+| 1 | Check Kth Bit | Bit masking / shifting |
+| 2 | Minimum Bit Flips | XOR + popcount |
+| 3 | Odd Occurrence Element | XOR |
+| 4 | Power of 2 | n & (n−1) trick |
+| 5 | Two Odd Occurring Numbers | XOR + rightmost set bit |
+| 6 | XOR from L to R | Pattern-based formula |
+
+</details>
+
+<details>
+<summary><b>🟡 Medium — 2 problems</b></summary>
+
+| # | Problem | Key Technique |
+|:-:|---------|---------------|
+| 1 | Subsets Using Bitmask | Bit masking |
+| 2 | Division Using Bit Manipulation | Bit shifting |
 
 </details>
 
@@ -577,8 +641,11 @@ DSA_01/
 
 | # | Problem | Difficulty |
 |:-:|---------|:----------:|
-| 1 | Valid String | 🟡 Medium |
-| 2 | Max Sum of M Overlapping Subarrays | 🔴 Hard |
+| 1 | Biweekly 191 — Count Special Integers (Easy) | 🟢 Easy |
+| 2 | LeetCode Weekly 518 — Count Rotations | 🟢 Easy |
+| 3 | Biweekly 191 — Count Special Integers (Medium) | 🟡 Medium |
+| 4 | Valid String | 🟡 Medium |
+| 5 | Max Sum of M Overlapping Subarrays | 🔴 Hard |
 
 <br>
 
@@ -603,8 +670,8 @@ python3 Arrays/Medium/kedanesAlgorithem.py
 
 ```
                     ┌─────────────────────────────────────────────────┐
-  🟢  Easy          │████████████████████████░░░░░░░░░░░░░░░░░░  │  71   │
-  🟡  Medium        │██████████████████████████░░░░░░░░░░░░░░░   │  73   │
+  🟢  Easy          │████████████████████████░░░░░░░░░░░░░░░░░░  │  79   │
+  🟡  Medium        │██████████████████████████████░░░░░░░░░░░   │  85   │
   🔴  Hard          │█████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░   │  17   │
                     └─────────────────────────────────────────────────┘
 ```
@@ -622,7 +689,8 @@ python3 Arrays/Medium/kedanesAlgorithem.py
 - [x] ~~Strings (Easy & Medium)~~
 - [x] ~~Linked Lists~~
 - [ ] Stacks & Queues
-- [ ] Recursion & Backtracking *(in progress — 9 problems)*
+- [ ] Recursion & Backtracking *(in progress — 18 problems)*
+- [ ] Bit Manipulation *(in progress — 8 problems)*
 - [ ] Greedy Algorithms
 - [ ] Binary Trees & BSTs
 - [ ] Graphs (BFS, DFS, Dijkstra)
