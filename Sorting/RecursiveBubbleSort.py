@@ -11,7 +11,7 @@ class Solution:
         if arr[i+1]<arr[i]:
             arr[i+1],arr[i] = arr[i],arr[i+1]
 
-        self.recursiveBubbleSort(arr,i+1,n)
+        self.recursiveBubbleSort(arr,i+1,n) # calling the function again with the next index to compare
 
         return arr
 #

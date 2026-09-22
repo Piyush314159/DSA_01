@@ -5,12 +5,12 @@ class Solution:
             return
         
         mid = (l + r) // 2
-        self.mergeSort(arr, l, mid)
-        self.mergeSort(arr, mid + 1, r)
+        self.mergeSort(arr, l, mid)#left half
+        self.mergeSort(arr, mid + 1, r)#right half
         
-        # merge inline
+        # merge the two halves
         left = arr[l:mid+1]
-        right = arr[mid+1:r+1]
+        right = arr[mid+1:r+1] #mid+1 because mid is already included in the left half
         
         i = 0 #left idx
         j=0 #right idx
