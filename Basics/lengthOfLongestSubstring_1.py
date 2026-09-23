@@ -8,8 +8,8 @@ class Solution:
         max_len = 0                         #for storing
         for right in range(len(s)):
             if s[right] in seen and seen[s[right]] >= left:
-                left = seen[s[right]] + 1
-            seen[s[right]] = right          #for storing the char postions
+                left = seen[s[right]] + 1   # moving the window past the last occurrence of the character
+            seen[s[right]] = right          #for storing the char postions(new occurrences)
             max_len = max(max_len, right - left + 1)
             print(seen,left,max_len)
         return max_len
