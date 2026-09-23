@@ -4,14 +4,14 @@ class Solution:
         if d>=n:
             return arr
 
-        def reverse(l,r):
+        def reverse(l,r): # reverse the array from index l to r
             while l<r:
                 arr[l], arr[r] =arr[r], arr[l]
                 l+=1
                 r-=1
-        reverse(0,d-1)
-        reverse(d,n-1)
-        reverse(0,n-1)
+        reverse(0,d-1)  # reverse the first d elements
+        reverse(d,n-1)  # reverse the remaining elements
+        reverse(0,n-1)  # reverse the entire array
         return arr
 
 a = Solution()
