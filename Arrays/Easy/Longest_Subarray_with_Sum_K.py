@@ -18,7 +18,7 @@ class Solution:
             if prefix not in hashmap:
                 hashmap[prefix]=i
 
-        return max_len
+        return hashmap, hashmap
 
     
 a = Solution()
