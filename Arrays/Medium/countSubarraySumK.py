@@ -15,4 +15,4 @@ class Solution:
         return count
 
 s = Solution()
-print(s.subarraySum([[3, 4, 7, 2, -3, 1, 4, 2], 7]))
+print(s.subarraySum([3, 4, 7, 2, -3, 1, 4, 2], 7))
