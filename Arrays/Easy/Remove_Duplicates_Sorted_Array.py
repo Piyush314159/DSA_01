@@ -12,3 +12,10 @@ class Solution:
 a = Solution()
 print(a.removeDuplicates([0,0,1,1,1,2,2,3,3,4]))
 
+def removeDuplicates1(arr):
+    for i in range(len(arr) - 2,-1,-1):
+        if arr[i] == arr[i+1]:
+            arr.pop(i)
+    return arr
+
+print(removeDuplicates1([0,0,1,1,1,2,2,3,3,4]))

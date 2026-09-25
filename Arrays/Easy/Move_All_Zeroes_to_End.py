@@ -21,4 +21,4 @@ class Solution:
         return arr
 
 a = Solution()
-print(a.pushZerosToEnd([1, 2, 0, 4, 3, 0, 5, 0, 6, 4 ,0, 1]))
+print(a.pushZerosToEnd([1, 2, 0, 0, 3, 0, 5, 0, 6, 4 ,0, 1]))

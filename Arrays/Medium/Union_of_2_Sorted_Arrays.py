@@ -34,4 +34,4 @@ class Solution:
         return out_arr
 
 a = Solution()
-print(a.findUnion([1, 2, 3, 4, 5], [1, 2, 3, 6, 7,8]))
+print(a.findUnion([2, 3, 4, 5], [1, 2, 3, 6, 7,8]))
