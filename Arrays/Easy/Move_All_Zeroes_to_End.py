@@ -14,7 +14,7 @@ class Solution:
             return arr #no zero found
 
         for i in range(j+1,n):
-            if arr[i]!=0:
+            if arr[i]!=0:           #zeroes pile up upto j to i-1, so swap the first zero with the next non-zero element
                 arr[i], arr[j] = arr[j], arr[i]
                 j+=1
         
