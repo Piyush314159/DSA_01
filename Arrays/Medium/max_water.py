@@ -14,5 +14,5 @@ class Solution:
                 i += 1
             else:
                 #same here if the jth el is smaller increasing i will only decraese the area so just change the 
-                j-=1
+                j -= 1
         return max_water
