@@ -1,6 +1,6 @@
 class Solution:
 
-    def makeZeros(self, mat):
+    def makeZerosToSum(self, mat):
 
         # 1. Find all original zeroes
         zeroes = []
@@ -56,3 +56,20 @@ print(a.makeZeros([[1, 2, 3, 4],
                 [5, 6, 0, 7], 
                 [8, 9, 4, 6],
                 [8, 4, 0, 2]]))
+
+class Solution1:
+    def setZeroes(self, matrix: list[list[int]]) -> None:
+        m, n = len(matrix), len(matrix[0])
+        rows, cols = set(), set()
+
+        for i in range(m):
+            for j in range(n):
+                if matrix[i][j] == 0:
+                    rows.add(i)
+                    cols.add(j)
+
+        for i in range(m):
+            for j in range(n):
+                if i in rows or j in cols:
+                    matrix[i][j] = 0
+        return matrix
