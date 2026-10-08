@@ -6,13 +6,10 @@ class Solution:
         ansStart = ansEnd = -1
 
         for i in range(1,len(arr)):
-            if sum_<0: #if the sum(not including current element) is negative we are resetting the sum to current element
-                sum_ = arr[i]
-                start = i
-            else: #if the sum is positive we add the current element to it
-                sum_ += arr[i]
+            sum_ = max(arr[i], sum_ + arr[i])  #if the current element is greater than the sum of previous elements we will start a new subarray from the current element
+            start = i if sum_ == arr[i] else start 
             
-            if sum_>max_sum: #if the current sum is greater than previous max sum we are updating the max sum and the start and end index of subarray
+            if sum_>max_sum:        #if the current sum is greater than previous max sum we are updating the max sum and the start and end index of subarray
                 ansStart = start
                 ansEnd = i
                 max_sum = sum_
