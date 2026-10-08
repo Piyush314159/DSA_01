@@ -26,3 +26,14 @@ class Solution:
             j += 1                    #                          
         
         return max_profit
+
+class Solution2:
+    def maxProfit(self, prices: list[int]) -> int:
+        min_price = float('inf')
+        max_prof = 0
+
+        for price in prices:
+            min_price = min(min_price, price)           # keep track of the minimum price so far
+            max_prof = max(max_prof, price - min_price) # keep track of the maximum profit so far
+
+        return max_prof
