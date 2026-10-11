@@ -1,5 +1,7 @@
 class Solution:
     def longestCommonPrefix(self, strs: list[str]) -> str:
+        if not strs:
+            return ""
         ans = ""
         strs = sorted(strs)
         first = strs[0]
@@ -14,4 +16,4 @@ class Solution:
 
 a = Solution()
 print(a.longestCommonPrefix(["flower","flow","flight"]))  # Output: "fl"
-print(a.longestCommonPrefix(["dog","racecar","car"]))  # Output: ""
+print(a.longestCommonPrefix(["apple", "banana", "cherry"]))  # Output: ""
